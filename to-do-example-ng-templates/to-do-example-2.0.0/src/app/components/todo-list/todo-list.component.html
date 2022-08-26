@@ -1,0 +1,16 @@
+<section *ngFor="let item of toDoList">
+  <ng-template #titleCard>
+    {{item.title}}
+  </ng-template>
+  <ng-template #actionsCard>
+    <app-my-custom-button (click)="completeToDo(item)">
+      {{item.completed ? 'Completado' : 'Completar'}}
+    </app-my-custom-button>
+  </ng-template>
+
+  <app-my-custom-card
+    [title]="titleCard"
+    [actions]="actionsCard"
+  >
+  </app-my-custom-card>
+</section>

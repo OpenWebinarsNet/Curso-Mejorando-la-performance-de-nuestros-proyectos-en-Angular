@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "title": "Recoger la colada",
+    "completed": false
+  },
+  {
+    "id": "2",
+    "title": "Mandar documentación a la oficina",
+    "completed": true
+  },
+  {
+    "id": "3",
+    "title": "Recoger a Adrián del aeropuerto",
+    "completed": false
+  }
+]

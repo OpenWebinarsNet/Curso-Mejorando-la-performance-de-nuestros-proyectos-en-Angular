@@ -1,0 +1,10 @@
+<section>
+  <mat-form-field appearance="legacy" >
+    <mat-label>Nueva Tarea</mat-label>
+    <input matInput placeholder="Placeholder" #toDo>
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  </mat-form-field>
+  <app-my-custom-button (click)="addToDo(toDo.value)">
+    Añadir
+  </app-my-custom-button>
+</section>

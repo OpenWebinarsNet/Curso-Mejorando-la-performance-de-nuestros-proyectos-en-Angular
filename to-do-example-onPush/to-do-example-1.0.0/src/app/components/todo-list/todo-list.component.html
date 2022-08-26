@@ -1,0 +1,12 @@
+<section>
+  <mat-card *ngFor="let item of toDoList">
+    <mat-card-title>{{item.title}}</mat-card-title>
+    <mat-card-actions align="end">
+      <button mat-button
+        (click)="completeToDo(item)"
+      >
+        {{item.completed ? 'Completado' : 'Completar'}}
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>
